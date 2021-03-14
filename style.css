@@ -275,8 +275,8 @@ p{
     padding: 100px 0;
 }
 #services .service-top{
-	width: 500px;
-	max-margin: 0 auto;
+	max-width: 500px;
+	margin: 0 auto;
 }
 #services .service-bottom{
     display: flex;
@@ -539,6 +539,16 @@ p{
 
 
 /* Keyframes */
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
 @keyframes text_reveal_box{
 	50% {
 		width: 100%;
