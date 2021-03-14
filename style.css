@@ -11,7 +11,8 @@ html{
 	scroll-behavior: smooth;
 }
 a{
-    text-decoration: none;
+	text-decoration: none;
+	color: crimson;
 }
 .container{
     min-height: 100vh;
