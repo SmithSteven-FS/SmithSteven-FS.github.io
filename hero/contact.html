@@ -1,4 +1,21 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("stevenwsmith22@gmail.com", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: stevenwsmith22@gmail.com");
+
+
+}
+
+
+?>
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -89,7 +106,7 @@
         </div>
         <div class="right">
           <div class="form-wrapper">
-            <form action="#">
+            <form action="subscriberform.php" method="POST" id="contact-form">
               <div class="form-group">
                 <label for="name">Your Name</label>
                 <div class="input-wrapper">
@@ -114,7 +131,9 @@
                 <textarea type="text" id="message" name="message" width="100%"></textarea>
 
               </div>
-              <button type="submit">Send</button>
+              <!-- <button type="submit">Send</button> -->
+              <p ><input id="submitbutton" type="submit" value="Send" /></p>
+
             </form>
           </div>
         </div>

@@ -780,6 +780,11 @@ p {
 #contact {
 	padding: 10rem 0;
 }
+#contact #submitbutton{
+	
+	padding: 15px 19px 15px 19px;
+	font-weight: bold;
+}
 #contact .wrapper {
 	display: flex;
 	align-items: flex-start;
@@ -912,6 +917,8 @@ p {
 	border: none;
 	cursor: pointer;
 }
+
+
 @media only screen and (max-width: 768px) {
 	#contact .wrapper {
 		flex-direction: column-reverse;
