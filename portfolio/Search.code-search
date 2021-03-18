@@ -1,0 +1,66 @@
+# Query: .html
+# ContextLines: 1
+
+15 results - 2 files
+
+~/Desktop/SmithSteven-FS.github.io/index.html:
+  33           </p>
+  34:       <a href="portfolio/portfolio.html" id="portfoliobutton">Portfolio</a>
+  35      </div>
+
+~/Desktop/SmithSteven-FS.github.io/portfolio/portfolio.html:
+   89                  <div class="project-info">
+   90:                   <a href="../realestate/bmills/bmills.html"><h1>Project 1</h1></a>
+   91                      <h2>Real Estate Website</h2>
+
+   94                  <div class="project-img-complete">
+   95:                   <a href="../realestate/bmills/bmills.html">
+   96                      <img src="img/realestate.png" alt="blog">
+
+  101                  <div class="project-info">
+  102:                   <a href="../gallery/mygallery.html"><h1>Project 2</h1></a>
+  103                      <h2>Photo/Art Gallery Website</h2>
+
+  106                  <div class="project-img-complete">
+  107:                   <a href="../gallery/mygallery.html">
+  108                      <img src="img/mygallery.png" alt="blog">
+
+  113                  <div class="project-info">
+  114:                   <a href="../restaurant/restaurant.html"><h1>Project 3</h1></a>
+  115                      <h2>Restaurant Website</h2>
+
+  118                  <div class="project-img-complete">
+  119:                   <a href="../restaurant/restaurant.html">
+  120                      <img src="img/restaurant.png" alt="blog">
+
+  125                  <div class="project-info">
+  126:                   <a href="../hero/hero2.html"><h1>Project 4</h1></a>
+  127                      <h2>Hero Page</h2>
+
+  130                  <div class="project-img-complete">
+  131:                   <a href="../hero/hero2.html">
+  132                      <img src="img/hero.png" alt="blog">
+
+  137                  <div class="project-info">
+  138:                     <a href="../blog/blog.html"><h1>Project 5</h1></a>
+  139                      <h2>Blog</h2>
+
+  143  
+  144:                     <a href="../blog/blog.html">
+  145                         <img src="img/blog.png" alt="blog">
+
+  151                <div class="project-info">
+  152:                 <a href="../gallery/template/index.html"><h1>Project 6</h1></a>
+  153                    <h2>Image Gallery</h2>
+
+  157                <div class="project-img-complete">
+  158:                 <a href="../gallery/template/index.html">
+  159                    <img src="img/gallerytemplate.png" alt="blog">
+
+  164              <div class="project-info">
+  165:               <a href="../form/form.html"><h1>Project 7</h1></a>
+  166                  <h2>PHP Contact Form</h2>
+
+  169              <div class="project-img-complete">
+  170:               <a href="../form/form.html">
+  171                  <img src="img/phpcontactform.jpeg" alt="blog">

@@ -1,255 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Responsive Portfolio Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <section id="header">
-      <div class="header container">
-        <div class="nav-bar">
-          <div class="brand">
-            <a href="#hero"><h1><span>S</span>teven <span>S</span>mith</h1></a>
-          </div>
-          <div class="nav-list">
-            <div class="hamburger"><div class="bar"></div></div>
-            <ul>
-              <li><a href="#hero" data-after="Home">Home</a></li>
-              <li><a href="#services" data-after="Service">Services</a></li>
-              <li><a href="#projects" data-after="Projects">Projects</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <li><a href="#contact" data-after="Contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Header -->
-
-  <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>Hello, <span></span></h1>
-                <h1>My Name is <span></span></h1>
-                <h1>Steven <span></span></h1>
-                <a href="#projects" type="button" class="cta">Portfolio</a>
-            </div>
-        </div>
-    </section>
-  <!-- End Hero Section -->
-
-
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias voluptatum explicabo!</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-        </div>
-      </div>
+  <!-- Header -->
+  <section class="banner" id="sec">.
+    <header>
+      <a href="#" class="logo">Real One Solutions</a>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <h2>Hello World,<br>this is my <span>Portfolio</span></h2>
+      <p>Learning to code in 
+        <a href="https://www.fullsail.edu/" target="/blank">school</a>, on 
+        <a href="https://www.udemy.com/" target="/blank">udemy</a>, 
+        <a href="https://teamtreehouse.com/home" target="/blank">treehouse</a>, 
+        <a href="https://getmimo.com/" target="/blank">m1m0</a> and of course 
+        <a href="https://www.youtube.com/" target="/blank">youtube.</a>
+        <br>
+        <br>
+        The following shows work that I will be continuously updating and pushing to 
+        <a href="https://github.com/" target="/blank">github</a>
+         using 
+         <a href="https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/#:~:text=Using%20a%20terminal%20allows%20us,complex%20automations%20and%20programming%20skills." target="/blank">
+        terminal.</a>
+         
+        
+         </p>
+      <a href="portfolio/portfolio.html" id="portfoliobutton">Portfolio</a>
     </div>
+    <ul class="sci">
+      <li><a href="#" target="/blank"><img src="facebook.png"></a></li>
+      <li><a href="#" target="/blank"><img src="twitter.png"></a></li>
+      <li><a href="#" target="/blank"><img src="linkedin.png"></a></li>
+    </ul>
   </section>
-  <!-- End Service Section -->
-
-
-  <!-- Projects Section -->
-<section id="projects">
-    <div class="projects container">
-        <div class="projects-header">
-            <h1 class="section-title">Recent <span>Projects</span></h1>
-        </div>
-        <div class="all-projects">
-            <div class="project-item">
-                <div class="project-info">
-                  <a href="realestate/bmills/bmills.html"><h1>Project 1</h1></a>
-                    <h2>Real Estate Website</h2>
-                    <p><a href="https://www.youtube.com/watch?v=UtaGNP7k4kA"><strong>OnClick Media</strong> (YouTube)</a> taught me how to build this real estate website.</p>
-                </div>
-                <div class="project-img-complete">
-                  <a href="realestate/bmills/bmills.html">
-                    <img src="img/realestate.png" alt="blog">
-                 </a>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                  <a href="gallery/mygallery.html"><h1>Project 2</h1></a>
-                    <h2>Photo/Art Gallery Website</h2>
-                    <p><a href="https://www.youtube.com/watch?v=073XKB9xv-M"><strong>Web Master</strong> (YouTube)</a> taught me how to build this photo/art gallery website.</p>
-                </div>
-                <div class="project-img-complete">
-                  <a href="gallery/mygallery.html">
-                    <img src="img/mygallery.png" alt="blog">
-                 </a>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                  <a href="restaurant/restaurant.html"><h1>Project 3</h1></a>
-                    <h2>Restaurant Website</h2>
-                    <p><a href="https://www.youtube.com/watch?v=JWGepycwXzM"><strong>Alex Codes</strong> (YouTube)</a> taught me how to build this restaurant website.</p>
-                </div>
-                <div class="project-img-complete">
-                  <a href="restaurant/restaurant.html">
-                    <img src="img/restaurant.png" alt="blog">
-                 </a>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                  <a href="hero/hero2.html"><h1>Project 4</h1></a>
-                    <h2>Hero Page</h2>
-                    <p><a href="https://www.youtube.com/watch?v=EfBEcU77IW0"><strong>WEB CIFAR</strong> (YouTube)</a> taught me how to build this hero page.</p>
-                </div>
-                <div class="project-img-complete">
-                  <a href="hero/hero2.html">
-                    <img src="img/hero.png" alt="blog">
-                 </a>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                    <a href="blog/blog.html"><h1>Project 5</h1></a>
-                    <h2>Blog</h2>
-                    <p><a href="https://getmimo.com"><strong>m1m0</strong> ($9.99/month for upgraded version)</a> helped me to build this simple blog.</p>
-                </div>
-                <div class="project-img-complete">
-
-                    <a href="blog/blog.html">
-                       <img src="img/blog.png" alt="blog">
-                    </a>
-
-                </div>
-            </div>
-            <div class="project-item">
-              <div class="project-info">
-                <a href="gallery/template/index.html"><h1>Project 6</h1></a>
-                  <h2>Image Gallery</h2>
-                  <p><a href="https://www.youtube.com/watch?v=cVyhH3t49fs"><strong>
-                    Easy Tutorials</strong> (YouTube)</a> taught me how to build this image gallery website.</p>
-              </div>
-              <div class="project-img-complete">
-                <a href="gallery/template/index.html">
-                  <img src="img/gallerytemplate.png" alt="blog">
-               </a>
-              </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <a href="form/form.html"><h1>Project 7</h1></a>
-                <h2>PHP Contact Form</h2>
-                <p><a href="https://phppot.com/php/php-contact-form/"><strong>php pot</strong></a> taught me how to build this php contact form.</p>
-            </div>
-            <div class="project-img-complete">
-              <a href="form/form.html">
-                <img src="img/phpcontactform.jpeg" alt="blog">
-             </a>
-            </div>
-        </div>
-        </div>
+  <div id="navigation">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-</section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="img/stevensmithprofile.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
-        <a href="resume.txt" class="cta" download="">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 234 123 1234</h2>
-            <h2>+1 234 123 1234</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
-
-
-  <!-- Footer Section -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1><span>S</span>teven <span>S</span>mith</h1></div>
-      <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/stevenwsmith622"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/myporcupinebroke/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/steven-smith-8a7039b5/"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
-        </div>
-      </div>
-      <p>Copyright © 2020 Smith. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer Section -->
-  <script src="app.js"></script>
+  <script type="text/javascript">
+    function toggle(){
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active')
+      nav.classList.toggle('active')
+    }
+  </script>
 </body>
 </html>
