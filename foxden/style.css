@@ -140,3 +140,25 @@ body
 	height: 50px;
 	border-radius: 50%;
   }
+.card .details h3
+{
+	text-align: center;
+	font-weight: 700;
+	line-height: 1em;
+}
+.card .details h3 span
+{
+	color: #eb7a34;
+	font-size: 0.8em;
+}
+.card .details h4
+{
+	text-align: center;
+	font-weight: 700;
+	line-height: 1em;
+}
+.card .details h4 span
+{
+	color: #eb7a34;
+	font-size: 0.8em;
+}
