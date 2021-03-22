@@ -204,3 +204,18 @@ body
 	margin-top: 0px;
 	margin-bottom: 9px;
 }
+#neon{
+    text-shadow: -2px -2px 10px #fff,
+        2px 2px 10px #fff,
+        0 0 20px #f10,
+        0 0 40px #f10,
+        0 0 60px #f10,
+        0 0 80px #f10,
+        0 0 100px #f10;
+    box-shadow: 0 0 5px #fff,
+        inset 0 0 5px #fff,
+        0 0 20px #08f,
+        inset 0 0 20px #08f,
+        0 0 40px #08f,
+        inset 0 0 40px #08f;
+}

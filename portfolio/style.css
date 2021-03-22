@@ -263,6 +263,7 @@ p{
 #hero h1:nth-child(3) span{
 	animation-delay: 2.5s;
 }
+
 /* End Hero Section */
 
 
@@ -314,13 +315,15 @@ p{
 #services .service-bottom .icon{
     height: 80px;
     width: 80px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	align-self: center;
 }
 #services .service-item h2{
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	align-self: center;
 }
 #services .service-item p{
     color: white;
