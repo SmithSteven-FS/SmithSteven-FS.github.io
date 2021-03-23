@@ -384,8 +384,8 @@ header #toggle:after
       order: 8;
   }
   .testimonial{
-    width: fit-content;
-    height: fit-content;
+    width: 50%;
+    height: 50%;
   }
 }
 .section-title{
