@@ -383,7 +383,7 @@ header #toggle:after
   .row .col:nth-child(8){
       order: 8;
   }
-  .testimonial{
+  .slide-row{
     width: 50%;
     height: 50%;
   }
