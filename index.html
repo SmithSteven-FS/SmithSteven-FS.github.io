@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Responsive Portfolio Landing Page</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <!-- Header -->
@@ -39,17 +40,173 @@
   <div id="navigation">
     <ul>
         <li><a href="">Home</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="portfolio/portfolio.html">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
     </div>
-  <script type="text/javascript">
+    
+
+  <section id="team">
+    <div class="team-top">
+      <h1 class="section-title">T<span>E</span>AM</h1>
+    </div>
+    <div class="row">
+      <div class="col">
+          <span></span>
+        <img src="img-1.jpg"> 
+      </div> 
+      <div class="col">
+        <h3>Hazel Andrea</h3>
+        <p>Founder & CEO</p>
+        <div class="social-link">
+          <i class="fa fa-facebook"></i>  
+          <i class="fa fa-twitter"></i>  
+          <i class="fa fa-linkedin"></i>  
+        </div>
+      </div> 
+      <div class="col">
+          <span></span>
+        <img src="img-2.jpg"> 
+      </div> 
+      <div class="col">
+        <h3>Lucas Edward</h3>
+        <p>Product Manager</p>
+        <div class="social-link">
+          <i class="fa fa-facebook"></i>  
+          <i class="fa fa-twitter"></i>  
+          <i class="fa fa-linkedin"></i>  
+        </div>
+      </div>
+       
+      <div class="col">
+        <h3>Ella Piper</h3>
+        <p>Marketing Head</p>
+        <div class="social-link">
+          <i class="fa fa-facebook"></i>  
+          <i class="fa fa-twitter"></i>  
+          <i class="fa fa-linkedin"></i>  
+        </div>
+      </div>
+      <div class="col">
+          <span class="arrow"></span>
+        <img src="img-3.jpg"> 
+      </div>
+  
+      <div class="col">
+        <h3>Jaxon Matthew</h3>
+        <p>Affiliate Manager</p>
+        <div class="social-link">
+          <i class="fa fa-facebook"></i>  
+          <i class="fa fa-twitter"></i>  
+          <i class="fa fa-linkedin"></i>  
+        </div>
+      </div> 
+        <div class="col">
+            <span class="arrow"></span>
+        <img src="img-4.jpg"> 
+      </div> 
+    </div>
+  </section>
+  <section id="testimonials">
+    <div class="testimonials-top">
+      <h1 class="section-title">T<span>E</span>ST<span>I</span>MONI<span>A</span>LS</h1>
+    </div>
+    <div class="container">
+      <div class="indicator">
+          <span class="btn active"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+      </div>
+       <div class="testimonial">
+        <div class="slide-row" id="slide">
+            <div class="slide-col">
+            <div class="user-text">
+                <p>Sarah Samona is an American internet entrepreneur and media proprietor, and investor. She is the founder of the multi-national technology company Zara.</p>
+                <h3>Sarah</h3>
+                <p>Zara Inc.</p>
+            </div>
+            <div class="user-img">
+                <img src="user-1.png">
+            </div>
+        </div>
+            <div class="slide-col">
+            <div class="user-text">
+                <p>Jeffrey Traimer Invantony is an American internet entrepreneur and media proprietor, and investor. He is the founder of the multi-national technology company Treymont.</p>
+                <h3>Jeffrey</h3>
+                <p>Treymont Inc.</p>
+            </div>
+            <div class="user-img">
+                <img src="user-2.png">
+            </div>
+        </div>
+            <div class="slide-col">
+            <div class="user-text">
+                <p>Jacob Linchon is an European entrepreneur, media consultant, and investor. He is also founder of the Hallmark Inc.</p>
+                <h3>Jacob</h3>
+                <p>Hallmark Inc.</p>
+            </div>
+            <div class="user-img">
+                <img src="user-3.png">
+            </div>
+        </div>
+            <div class="slide-col">
+            <div class="user-text">
+                <p>Samantha shah is a business analyst, entrepreneur and media proprietor, and investor. She also known as the best selling book author.</p>
+                <h3>Samantha</h3>
+                <p>Author</p>
+            </div>
+            <div class="user-img">
+                <img src="user-4.png">
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+  </section>
+  <script>
     function toggle(){
-      var sec = document.getElementById('sec');
-      var nav = document.getElementById('navigation');
-      sec.classList.toggle('active')
-      nav.classList.toggle('active')
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active')
+        nav.classList.toggle('active')
+      }
+    
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide");
+    
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
     }
-  </script>
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[3].onclick = function(){
+        slide.style.transform = "translateX(-2400px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    
+    
+</script>
 </body>
 </html>

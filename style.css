@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
 }
 a{
   color: #40c3ff;
@@ -107,18 +111,7 @@ header #toggle:after
   color: #fff;
   font-weight: 300;
 }
-#portfoliobutton
-{
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-  background: #fff;
-  color: #000;
-  padding: 10px 30px;
-  text-decoration:  none;
-  font-size: 1.2em;
-  font-weight: 500;
-}
+
 .sci
 {
   position: absolute;
@@ -153,7 +146,7 @@ header #toggle:after
 }
 #navigation
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: -200px;
   width: 400px;
@@ -230,7 +223,7 @@ header #toggle:after
       opacity: 1;
   }
   100%{
-      left: 84%;
+      left: 67%;
       opacity: 1;
   }
   
@@ -280,4 +273,221 @@ header #toggle:after
     margin: initial;
     margin-right: 10px;
   }
+}
+#team{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  min-height: 100vh;
+  background: url(black.png);
+  background-size: cover;
+  
+  transition: 0.5s;
+  z-index: 2;
+}
+#team h3{
+  color: white;
+}
+.row{
+  background: #40c3ff;
+  width: 80%;
+  margin: 4% auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.col{
+  flex-basis: 25%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.col img{
+  width: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+.col p{
+  margin: 20px 0;
+}
+.social-link .fa{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #000;
+  margin: 0 7px;
+  cursor: pointer;
+  transition: transform .5s;
+}
+.social-link .fa:hover{
+  background: #000;
+  color: #40c3ff;
+  transform: translateY(-7px);
+}
+.col:hover img{
+  transform: scale(1.1);
+  
+}
+.col span{
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #40c3ff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.col .arrow{
+  right: unset;
+  left: 0;
+  border-left: 15px solid #40c3ff;
+  border-right: 15px solid transparent;
+}
+@media screen and (max-width: 770px){
+  .row{
+      width: 95%;
+  }
+  .col{
+      flex-basis: 50%;
+      font-size: 14px;
+  }
+  .social-link .fa{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+  
+  }
+  .row .col:nth-child(1){
+      order: 1;
+  }
+  .row .col:nth-child(2){
+      order: 2;
+  }
+  .row .col:nth-child(3){
+      order: 5;
+  }
+  .row .col:nth-child(4){
+      order: 6;
+  }
+  .row .col:nth-child(5){
+      order: 3;
+  }
+  .row .col:nth-child(6){
+      order: 4;
+  }
+  .row .col:nth-child(7){
+      order: 7;
+  }
+  .row .col:nth-child(8){
+      order: 8;
+  }
+}
+.section-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+.section-title span{
+  color: #40c3ff;
+}
+
+#testimonials{
+  position: relative;
+  width: 100%;
+  padding: 100px;
+  min-height: 100vh;
+  background: url(black.png);
+  background-size: cover;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 2;
+}
+#testimonials h1{
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+}
+  
+.slide-row{
+  display: flex;
+  width: 3200px;
+  transition: 0.5s;
+}    
+.slide-col{
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+.user-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.user-img img{
+  height: 100%;
+  border-radius: 10px;
+}
+.user-text{
+  background: #40c3ff;
+  width: 520px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  color: black;
+  padding: 45px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.user-text p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.user-text h3{
+  margin: 35px 0 5px;
+  color: #fff;
+}
+
+.container{
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.indicator{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+}
+.btn{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  border-radius: 15px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s;    
+}
+.testimonial{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#testimonials .active {
+  width: 45px;
 }
