@@ -383,6 +383,10 @@ header #toggle:after
   .row .col:nth-child(8){
       order: 8;
   }
+  .testimonial{
+    width: fit-content;
+    height: fit-content;
+  }
 }
 .section-title{
   font-family: 'Montserrat', sans-serif;
